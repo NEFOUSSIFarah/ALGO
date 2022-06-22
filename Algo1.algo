@@ -1,0 +1,41 @@
+ALGORITHM Algo1
+VAR
+    str: string:= "Ilya tant de belles choses à venir !";
+    count: INTEGER = 0;
+BEGIN
+  FOR (int i=0; i< str.length(); i++)  DO
+    IF (str.charAt[i] != '') THEN
+        count++
+    END_IF
+  END_FOR
+ Write (count)
+END
+
+
+ALGORITHM Algo2
+VAR
+    str: string:= "Ilya tant de belles choses à venir !";
+    count: INTEGER = 1;
+BEGIN
+      FOR i in str DO
+        IF (i == " ") THEN
+             count += 1
+        END_IF
+      END_FOR
+  Write (count) 
+END
+
+ALGORITHM Algo3
+VAR
+     str: string:= "Ilya tant de belles choses à venir !";
+     count, num_vowels: INTEGER = 0;
+     vowels: CHAR :=['a','i','o','u','e','y']
+BEGIN
+      FOR i in str DO
+         IF i in vowels THEN  
+            count +=1
+          END_IF
+      num_vowels=count
+      END_FOR
+ Write(num_vowels)
+END
